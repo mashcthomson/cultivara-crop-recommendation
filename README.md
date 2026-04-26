@@ -7,22 +7,44 @@
 
 > RMIT University – Master of Data Science Capstone Project
 
-## Overview
+---
 
-Cultivara is a machine learning-powered crop recommendation system designed to help farmers in Western Australia make data-driven decisions about which crops to plant based on soil and climate conditions.
+## What this is
 
-**Achieved 92% classification accuracy** using a Random Forest model trained on regional agricultural data.
+Cultivara started as a uni project but turned into something I genuinely cared about finishing properly.
 
-## Features
+The idea: farmers in Western Australia have to make crop decisions based on soil composition, rainfall, temperature, and humidity — often relying on experience and gut feel. We built a system that takes those inputs and tells you what to plant, backed by a Random Forest model trained on regional agricultural data.
 
-- Crop recommendation based on soil nutrients (N, P, K), temperature, humidity, pH, and rainfall
-- Random Forest classifier with hyperparameter tuning
-- Interactive Streamlit web application for easy farmer use
-- Data preprocessing pipeline with feature engineering
-- Model evaluation with confusion matrix and classification report
-- Regional coverage across Western Australia zones
+We hit **92% classification accuracy** across the crop categories. More importantly, we shipped a working Streamlit app that a non-technical farmer could actually open and use without needing to understand what a model is.
 
-## Tech Stack
+I led a team of 6 through the whole thing — from the messy early data wrangling stages through to stakeholder testing and the final presentation. Good experience in keeping a project moving when everyone has different ideas about what done means.
+
+---
+
+## What it does
+
+- Takes soil nutrient levels (N, P, K), temperature, humidity, pH, and rainfall as input
+- Runs them through a tuned Random Forest classifier
+- Returns the most suitable crop for those conditions
+- Displays results through a clean Streamlit interface built for farmers, not data scientists
+- Covers multiple regional zones across Western Australia
+
+---
+
+## Model performance
+
+| Metric | Score |
+|--------|-------|
+| Accuracy | 92% |
+| Precision (macro avg) | 0.91 |
+| Recall (macro avg) | 0.92 |
+| F1-Score (macro avg) | 0.91 |
+
+Evaluated with confusion matrix and full classification report across all crop classes.
+
+---
+
+## Tech stack
 
 | Component | Technology |
 |-----------|------------|
@@ -33,7 +55,9 @@ Cultivara is a machine learning-powered crop recommendation system designed to h
 | Visualization | Matplotlib, Seaborn |
 | Model Serialization | Pickle / Joblib |
 
-## Project Structure
+---
+
+## Project structure
 
 ```
 cultivara-crop-recommendation/
@@ -52,27 +76,25 @@ cultivara-crop-recommendation/
 └── README.md
 ```
 
-## Model Performance
+---
 
-| Metric | Score |
-|--------|-------|
-| Accuracy | 92% |
-| Precision (macro avg) | 0.91 |
-| Recall (macro avg) | 0.92 |
-| F1-Score (macro avg) | 0.91 |
+## Running it locally
 
-## Key Learnings
-
-- Hands-on experience with end-to-end ML pipeline development
-- Team leadership across 6 members covering data engineering, modeling, and deployment
-- Stakeholder testing and iterative feedback loops
-- Deploying interactive data apps with Streamlit
-
-## Team
-
-RMIT University – Master of Data Science (2023–2025)  
-Team of 6 | Project Lead: Monish Chezhian
+```bash
+git clone https://github.com/mashcthomson/cultivara-crop-recommendation.git
+cd cultivara-crop-recommendation
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 ---
 
-*Part of RMIT Master of Data Science program, 2024*
+## What I took away from this
+
+Leading a team of six through a full ML project taught me things that no amount of solo coding does. Keeping everyone aligned when you're dealing with data cleaning disagreements, model tuning debates, and a hard deadline is genuinely hard. 
+
+Technically: end-to-end pipeline work, hyperparameter tuning, deploying an ML app that non-technical people can actually use. Practically: how to run a project when you're also the one doing the work.
+
+---
+
+*RMIT University – Master of Data Science, 2024*
