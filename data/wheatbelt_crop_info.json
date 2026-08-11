@@ -1,0 +1,59 @@
+{
+    "Wheat": {
+      "why": "Wheat thrives in the Wheatbelt due to its temperate climate and well-drained soils.",
+      "irrigation_system": "Dryland farming; relies mostly on rainfall.",
+      "farming_methods": ["Conservation Tillage", "Crop Rotation", "Precision Agriculture"],
+      "grazing": "Post-harvest grazing of stubble is common.",
+      "suitability": "Primarily an agricultural crop; not suitable for viticulture or horticulture.",
+      "optimal_planting_months": "May - June"
+    },
+    "Barley": {
+      "why": "Barley is well-suited to the region's climate and is a good rotational crop with wheat.",
+      "irrigation_system": "Dryland farming with supplemental irrigation if needed.",
+      "farming_methods": ["Minimum Tillage", "Intercropping", "Soil Testing"],
+      "grazing": "Can be grazed during early growth stages.",
+      "suitability": "Agricultural crop; not suitable for viticulture or horticulture.",
+      "optimal_planting_months": "May - July"
+    },
+    "Canola": {
+      "why": "Canola adapts well to the Wheatbelt and provides valuable crop rotation benefits.",
+      "irrigation_system": "Dryland; ensure soil moisture at planting.",
+      "farming_methods": ["No-Till Farming", "Cover Cropping", "Pest Management"],
+      "grazing": "Not recommended due to potential toxicity.",
+      "suitability": "Oilseed crop; not suitable for viticulture or horticulture.",
+      "optimal_planting_months": "April - May"
+    },
+    "Lentils": {
+      "why": "Lentils fix nitrogen in the soil and are suitable for the Wheatbelt's conditions.",
+      "irrigation_system": "Dryland farming; requires well-distributed rainfall.",
+      "farming_methods": ["Zero Tillage", "Crop Rotation", "Disease Management"],
+      "grazing": "Can be grazed lightly before flowering.",
+      "suitability": "Agricultural crop; enhances soil fertility.",
+      "optimal_planting_months": "May - June"
+    },
+    "Sunflower": {
+      "why": "Sunflowers are drought-tolerant and perform well in the Wheatbelt's climate.",
+      "irrigation_system": "Dryland with optional supplemental irrigation.",
+      "farming_methods": ["Strip Tillage", "Integrated Pest Management", "Soil Testing"],
+      "grazing": "Stalks can be grazed after harvest.",
+      "suitability": "Oilseed and confectionery uses; not suitable for viticulture or horticulture.",
+      "optimal_planting_months": "August - September"
+    },
+    "Chickpeas": {
+      "why": "Chickpeas are suitable for the region and help improve soil nitrogen levels.",
+      "irrigation_system": "Dryland farming; sensitive to waterlogging.",
+      "farming_methods": ["Conservation Agriculture", "Crop Rotation", "Weed Management"],
+      "grazing": "Not recommended; plants are sensitive to grazing damage.",
+      "suitability": "Agricultural crop with high protein content.",
+      "optimal_planting_months": "May - June"
+    },
+    "Crop Rotation": {
+      "why": "Crop rotation enhances soil health and reduces pest and disease cycles.",
+      "irrigation_system": "Depends on the specific crops used.",
+      "farming_methods": ["Diverse Crop Sequences", "Cover Cropping", "Soil Testing"],
+      "grazing": "Can be integrated with livestock grazing systems.",
+      "suitability": "Essential practice for sustainable agriculture.",
+      "optimal_planting_months": "Varies by crop"
+    }
+  }
+  

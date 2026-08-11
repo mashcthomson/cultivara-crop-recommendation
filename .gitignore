@@ -15,3 +15,6 @@ env/
 
 # Note: trained .joblib models and regional CSVs are committed on purpose
 # so the app runs straight after cloning.
+
+# large presentation media - keep out of git history
+media/

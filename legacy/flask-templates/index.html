@@ -1,0 +1,120 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% import "macros.html" as macros %}
+
+{% block title %}Home - Crop Recommender{% endblock %}
+
+{% block content %}
+    <!-- Welcome Message Overlay -->
+    <div id="welcome-message">
+        <h2>{{ welcome_message }}</h2>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to the Crop Recommendation System</h1>
+        <p>Helping farmers find the best crops based on soil and climate data</p>
+    </div>
+
+    {% if not model_loaded %}
+        <div class="alert alert-warning text-center" role="alert" id="model-unavailable-message">
+            Crop recommendations are currently unavailable. Please train the model to enable this feature.
+        </div>
+    {% endif %}
+
+    <!-- Dynamic Top Message -->
+    <div id="dynamic-top-message" data-messages='{{ top_messages | tojson }}'>
+        {{ top_messages[0] if top_messages else "Welcome!" }}
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Region Images -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card region-card" onclick="location.href='/region/wheatbelt'">
+                    <img src="{{ url_for('static', filename='images/wheatbelt.jpg') }}" class="card-img-top" alt="Wheatbelt">
+                    <div class="card-body">
+                        <h5 class="card-title">The Wheatbelt</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card region-card" onclick="location.href='/region/kimberley'">
+                    <img src="{{ url_for('static', filename='images/kimberley.jpg') }}" class="card-img-top" alt="Kimberley">
+                    <div class="card-body">
+                        <h5 class="card-title">The Kimberley</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card region-card" onclick="location.href='/region/southwest'">
+                    <img src="{{ url_for('static', filename='images/southwest.jpg') }}" class="card-img-top" alt="South West">
+                    <div class="card-body">
+                        <h5 class="card-title">The South West</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Static Message -->
+        <div class="static-message text-center">
+            Click on a region to explore recommended crops and sustainable farming practices tailored to your area.
+        </div>
+
+        <!-- Crop Recommendation Form -->
+        <div class="card shadow-sm mt-5">
+            <div class="card-body">
+                <h2 class="card-title mb-4">Enter Your Farm Details</h2>
+                
+                {% if error %}
+                    <div class="alert alert-danger" role="alert">
+                        {{ error }}
+                    </div>
+                {% endif %}
+                
+                {% if model_loaded %}
+                    <form action="/recommend" method="POST" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="region" class="form-label">Select Region</label>
+                            <select class="form-select" id="region" name="region" required>
+                                <option value="" disabled selected>Select a region</option>
+                                <option value="Wheatbelt">Wheatbelt</option>
+                                <option value="Kimberley">Kimberley</option>
+                                <option value="Southwest">Southwest</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a region.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="soil_type" class="form-label">Soil Type</label>
+                            <select class="form-select" id="soil_type" name="soil_type" required>
+                                <option value="" disabled selected>Select soil type</option>
+                                <option value="Loamy">Loamy</option>
+                                <option value="Sandy">Sandy</option>
+                                <option value="Clay">Clay</option>
+                                <option value="Silty">Silty</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a soil type.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="rainfall" class="form-label">Annual Rainfall (mm)</label>
+                            <input type="number" class="form-control" id="rainfall" name="rainfall" placeholder="Enter rainfall in mm" required>
+                            <div class="invalid-feedback">Please enter the annual rainfall.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="temperature" class="form-label">Average Temperature (°C)</label>
+                            <input type="number" class="form-control" id="temperature" name="temperature" placeholder="Enter temperature" required>
+                            <div class="invalid-feedback">Please enter the average temperature.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Get Recommendation</button>
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

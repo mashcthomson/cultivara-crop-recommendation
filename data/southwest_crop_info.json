@@ -1,0 +1,90 @@
+{
+    "Grapes": {
+      "why": "The Southwest's Mediterranean climate is ideal for premium wine grape production.",
+      "irrigation_system": "Drip irrigation to control vine growth and fruit quality.",
+      "farming_methods": ["Canopy Management", "Soil Testing", "Organic Viticulture"],
+      "grazing": "Sheep grazing during dormancy helps manage weeds.",
+      "suitability": "Excellent for viticulture; supports local wine industry.",
+      "optimal_planting_months": "August - September"
+    },
+    "Tomatoes": {
+      "why": "Tomatoes benefit from the mild temperatures and fertile soils.",
+      "irrigation_system": "Drip irrigation to prevent foliar diseases.",
+      "farming_methods": ["Staking", "Mulching", "Integrated Pest Management"],
+      "grazing": "Not suitable for grazing.",
+      "suitability": "Horticultural crop with high market demand.",
+      "optimal_planting_months": "September - November"
+    },
+    "Lettuce": {
+      "why": "Lettuce grows well in the cool seasons of the Southwest.",
+      "irrigation_system": "Sprinkler or drip irrigation to maintain moisture.",
+      "farming_methods": ["Succession Planting", "Weed Control", "Soil Testing"],
+      "grazing": "Not suitable for grazing.",
+      "suitability": "Ideal for horticulture; fast-growing crop.",
+      "optimal_planting_months": "March - May, September - November"
+    },
+    "Carrots": {
+      "why": "Carrots prefer the deep, well-drained soils of the region.",
+      "irrigation_system": "Sprinkler irrigation to ensure even soil moisture.",
+      "farming_methods": ["Soil Preparation", "Thinning", "Pest Management"],
+      "grazing": "Not suitable for grazing.",
+      "suitability": "Horticultural crop; good for crop rotation.",
+      "optimal_planting_months": "February - April, August - October"
+    },
+    "Broccoli": {
+      "why": "Broccoli thrives in cooler temperatures found in the Southwest.",
+      "irrigation_system": "Overhead or drip irrigation to maintain consistent moisture.",
+      "farming_methods": ["Fertilization", "Pest Control", "Crop Rotation"],
+      "grazing": "Not suitable for grazing.",
+      "suitability": "Horticultural crop with nutritional benefits.",
+      "optimal_planting_months": "March - May, August - October"
+    },
+    "Apples": {
+      "why": "Cool winters and mild summers favor apple production.",
+      "irrigation_system": "Micro-sprinkler or drip irrigation.",
+      "farming_methods": ["Pruning", "Thinning", "Pest Management"],
+      "grazing": "Sheep grazing can be utilized in orchards.",
+      "suitability": "Ideal for horticulture and agri-tourism.",
+      "optimal_planting_months": "July - August"
+    },
+    "Pears": {
+      "why": "Pears require chilling periods provided by the region's climate.",
+      "irrigation_system": "Drip irrigation to prevent water stress.",
+      "farming_methods": ["Pruning", "Disease Control", "Soil Fertility Management"],
+      "grazing": "Limited grazing may be possible.",
+      "suitability": "Horticultural crop with export potential.",
+      "optimal_planting_months": "July - August"
+    },
+    "Berries": {
+      "why": "The Southwest's climate is suitable for various berries like strawberries, blueberries, and raspberries.",
+      "irrigation_system": "Drip irrigation with moisture monitoring.",
+      "farming_methods": ["Mulching", "Netting", "Organic Farming"],
+      "grazing": "Not suitable for grazing.",
+      "suitability": "High-value horticultural crops.",
+      "optimal_planting_months": "May - June"
+    },
+    "Dairy Pasture": {
+      "why": "Lush pastures support dairy farming due to reliable rainfall.",
+      "irrigation_system": "Sprinkler or pivot irrigation to maintain pasture quality.",
+      "farming_methods": ["Rotational Grazing", "Soil Testing", "Fertilization"],
+      "grazing": "Primary use; supports dairy cattle.",
+      "suitability": "Ideal for livestock farming.",
+      "optimal_planting_months": "Autumn and Spring sowing"
+    },
+    "Sustainable Grazing": {
+      "why": "Enhances pasture longevity and soil health.",
+      "irrigation_system": "Depends on pasture species and rainfall.",
+      "farming_methods": ["Rotational Grazing", "Pasture Resting", "Stocking Rate Management"],
+      "grazing": "Core practice; improves livestock productivity.",
+      "suitability": "Essential for sustainable livestock operations.",
+      "optimal_planting_months": "Varies by pasture species"
+    },
+    "Horticulture Best Practices": {
+      "why": "Implementing best practices increases crop yield and quality.",
+      "irrigation_system": "Efficient systems like drip irrigation are recommended.",
+      "farming_methods": ["Integrated Pest Management", "Soil Health Monitoring", "Sustainable Practices"],
+      "grazing": "Generally not applicable.",
+      "suitability": "Applicable to all horticultural crops.",
+      "optimal_planting_months": "Varies by crop"
+    }
+  }

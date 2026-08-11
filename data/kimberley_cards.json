@@ -1,0 +1,167 @@
+[
+    {
+        "title": "Mango",
+        "image": "mango.jpg",
+        "methods": [
+            "Irrigation Management: Implement drip irrigation to conserve water and deliver nutrients directly to roots.",
+            "Pruning and Training: Regularly prune to improve air circulation and fruit quality.",
+            "Optimal Planting Months: November-February (Wet Season)"
+        ],
+        "planting_months": "November-February (Wet Season)",
+        "why": "Ensures ample moisture for establishment and growth during the critical early stages.",
+        "reasons": [
+            "Water Efficiency: Drip irrigation reduces water wastage and enhances plant health.",
+            "Fruit Quality: Pruning improves sunlight exposure and reduces disease incidence."
+        ]
+    },
+    {
+        "title": "Sugar Cane",
+        "image": "sugar_cane.jpg",
+        "methods": [
+            "Mechanized Planting: Use machinery for uniform planting and increased efficiency.",
+            "Soil Fertility Management: Apply organic and inorganic fertilizers to support vigorous growth.",
+            "Optimal Planting Months: November-February (Wet Season)"
+        ],
+        "planting_months": "November-February (Wet Season)",
+        "why": "Moist conditions facilitate ratoon cropping and robust cane development.",
+        "reasons": [
+            "Efficiency: Mechanized planting accelerates establishment and reduces labor costs.",
+            "Growth Support: Balanced fertilization promotes high yields and sugar content."
+        ]
+    },
+    {
+        "title": "Passionfruit",
+        "image": "passionfruit.jpg",
+        "methods": [
+            "Trellising: Support vines with trellises to optimize space and improve fruit exposure.",
+            "Shade Management: Use shade nets to protect from intense sunlight and reduce water stress.",
+            "Optimal Planting Months: March-April (Early Dry Season)"
+        ],
+        "planting_months": "March-April (Early Dry Season)",
+        "why": "Establishes plants before the peak dry period, ensuring better water availability.",
+        "reasons": [
+            "Space Optimization: Trellising maximizes vertical space and enhances air flow.",
+            "Stress Reduction: Shade nets mitigate heat stress, improving plant resilience and fruit quality."
+        ]
+    },
+    {
+        "title": "Banana",
+        "image": "banana.jpg",
+        "methods": [
+            "Mulching: Retain soil moisture and suppress weeds.",
+            "Pest Monitoring: Regularly check for pests like banana aphids and apply biological controls.",
+            "Optimal Planting Months: November-February (Wet Season)"
+        ],
+        "planting_months": "November-February (Wet Season)",
+        "why": "Provides the necessary moisture and warm temperatures for optimal growth.",
+        "reasons": [
+            "Moisture Retention: Mulching conserves water, crucial during establishment.",
+            "Pest Control: Proactive monitoring reduces crop losses and ensures healthy plants."
+        ]
+    },
+    {
+        "title": "Papaya",
+        "image": "papaya.jpg",
+        "methods": [
+            "Grafting: Use disease-resistant rootstocks to improve plant resilience.",
+            "Fertilization: Apply balanced fertilizers to support rapid growth and fruiting.",
+            "Optimal Planting Months: March-April (Early Dry Season)"
+        ],
+        "planting_months": "March-April (Early Dry Season)",
+        "why": "Establishes plants before the dry season, ensuring better water availability.",
+        "reasons": [
+            "Disease Resistance: Grafting enhances plant health and longevity.",
+            "Fruit Production: Proper fertilization boosts yield and fruit quality."
+        ]
+    },
+    {
+        "title": "Pineapple",
+        "image": "pineapple.jpg",
+        "methods": [
+            "Proper Spacing: Ensure adequate space for each plant to maximize sunlight and air flow.",
+            "Weed Management: Regularly remove weeds to reduce competition for nutrients and water.",
+            "Optimal Planting Months: November-February (Wet Season)"
+        ],
+        "planting_months": "November-February (Wet Season)",
+        "why": "Abundant moisture supports the slow establishment of pineapple plants.",
+        "reasons": [
+            "Growth Optimization: Adequate spacing and weed control promote healthy plant development.",
+            "Yield Enhancement: Reduced competition leads to higher fruit yields and quality."
+        ]
+    },
+    {
+        "title": "Oranges",
+        "image": "oranges.jpg",
+        "methods": [
+            "Integrated Pest Management (IPM): Use biological controls and resistant varieties to manage pests.",
+            "Thinning: Remove excess fruits to improve size and quality of remaining fruits.",
+            "Optimal Planting Months: November-February (Wet Season)"
+        ],
+        "planting_months": "November-February (Wet Season)",
+        "why": "Ensures young trees receive sufficient moisture for establishment.",
+        "reasons": [
+            "Pest Control: IPM maintains healthy orchards with minimal chemical use.",
+            "Fruit Quality: Thinning improves fruit size, sweetness, and overall quality."
+        ]
+    },
+    {
+        "title": "Lemons",
+        "image": "lemons.jpg",
+        "methods": [
+            "Drip Irrigation: Provides consistent moisture directly to the roots.",
+            "Pruning: Remove dead or diseased branches to enhance air flow and sunlight penetration.",
+            "Optimal Planting Months: November-February (Wet Season)"
+        ],
+        "planting_months": "November-February (Wet Season)",
+        "why": "Adequate moisture supports robust tree establishment and growth.",
+        "reasons": [
+            "Water Efficiency: Drip irrigation conserves water and reduces disease risks.",
+            "Tree Health: Pruning enhances overall tree vitality and fruit production."
+        ]
+    },
+    {
+        "title": "Irrigation Management (Farming Practice)",
+        "image": "irrigation_management.jpg",
+        "methods": [
+            "Drip Irrigation: Provides precise water delivery to plant roots.",
+            "Rainwater Harvesting: Collect and store rainwater for irrigation during dry periods.",
+            "Optimal Implementation: Throughout Growing Seasons"
+        ],
+        "planting_months": "Throughout Growing Seasons",
+        "why": "Ensures consistent water supply, critical in variable tropical climates.",
+        "reasons": [
+            "Water Conservation: Drip systems minimize evaporation and runoff.",
+            "Sustainability: Harvested rainwater reduces dependency on external water sources."
+        ]
+    },
+    {
+        "title": "Pest and Disease Control (Farming Practice)",
+        "image": "pest_and_disease_control.jpg",
+        "methods": [
+            "Regular Monitoring: Inspect crops frequently for early detection of pests and diseases.",
+            "Use of Resistant Varieties: Plant crop varieties that are naturally resistant to common pests and diseases.",
+            "Optimal Implementation: Continuous Monitoring Throughout Growing Seasons"
+        ],
+        "planting_months": "Continuous Monitoring Throughout Growing Seasons",
+        "why": "Early detection and intervention prevent minor issues from escalating.",
+        "reasons": [
+            "Reduced Crop Losses: Early control measures mitigate extensive damage.",
+            "Environmental Protection: Minimizes the need for chemical pesticides, promoting eco-friendly farming."
+        ]
+    },
+    {
+        "title": "Soil Fertility Management (Farming Practice)",
+        "image": "soil_fertility_management.jpg",
+        "methods": [
+            "Organic Amendments: Incorporate compost and manure to enhance soil structure and fertility.",
+            "Balanced Fertilization: Apply fertilizers based on soil test results to meet crop-specific nutrient needs.",
+            "Optimal Implementation: Based on Soil Test Recommendations"
+        ],
+        "planting_months": "Based on Soil Test Recommendations",
+        "why": "Tailors soil management practices to the specific needs of each crop and soil type.",
+        "reasons": [
+            "Enhanced Soil Health: Organic amendments improve soil structure, water retention, and microbial activity.",
+            "Optimized Crop Growth: Balanced fertilization ensures crops receive essential nutrients, boosting productivity."
+        ]
+    }
+]

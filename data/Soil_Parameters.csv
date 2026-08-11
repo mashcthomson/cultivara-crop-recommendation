@@ -1,0 +1,10 @@
+Region,Soil Type,Soil Texture (Sand %),Soil Texture (Silt %),Soil Texture (Clay %),Soil pH,Nitrogen (N%),Phosphorus (P%),Potassium (K%),Soil Moisture Capacity (%)
+Merredin,Sandy Loam,60,10,30,7.31233482298037,0.1,0.05,0.3,25
+Merredin,Clay Loam,60,10,30,5.950674222191923,0.1,0.05,0.3,25
+Merredin,Loamy Sand,60,10,30,5.950674222191923,0.1,0.05,0.3,25
+Kununurra,Clay,40,20,40,6.019171221885913,0.2,0.1,0.25,35
+Kununurra,Loam,40,20,40,7.412709978515049,0.2,0.1,0.25,35
+Kununurra,Silt Loam,40,20,40,7.412709978515049,0.2,0.1,0.25,35
+Manjimup,Loamy Clay,50,20,30,6.340856255427622,0.15,0.08,0.35,40
+Manjimup,Sandy Clay,50,20,30,6.340856255427622,0.15,0.08,0.35,40
+Manjimup,Clay Loam,50,20,30,6.094946705331228,0.15,0.08,0.35,40

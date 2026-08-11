@@ -1,0 +1,3 @@
+"Pick your region, enter your farm details, and get a data-backed crop recommendation."
+"Recommendations are powered by Random Forest models trained per WA region."
+"Not sure about a value? Tick 'I don't know' and sensible defaults are used."

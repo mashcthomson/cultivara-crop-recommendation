@@ -1,0 +1,10 @@
+Region,Crop,Soil Type,Optimal Temperature (°C),Planting Month,Harvesting Month,Yield (ton/ha)
+Wheatbelt,Wheat,Sandy Loam,15,May,November,2.5
+Wheatbelt,Barley,Loam,14,May,November,3.2
+Wheatbelt,Canola,Clay Loam,16,April,October,1.8
+Wheatbelt,Lentils,Loam,17,May,October,1.5
+Wheatbelt,Sunflower,Sandy Loam,20,September,February,1.7
+Wheatbelt,Chickpeas,Clay Loam,18,May,October,1.6
+Wheatbelt,Crop Rotation,Various,N/A,Year 1,Year End,N/A
+Wheatbelt,Crop Rotation,Various,N/A,Year 2,Year End,N/A
+Wheatbelt,Crop Rotation,Various,N/A,Year 3,Year End,N/A

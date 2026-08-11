@@ -1,0 +1,168 @@
+[
+    {
+        "title": "Grapes (Viticulture)",
+        "image": "grapes.jpg",
+        "methods": [
+            "Drip Irrigation: Ensures efficient water use and reduces disease risks.",
+            "Greenhouse Cultivation: Protects vines from adverse weather and extends the growing season.",
+            "Pruning and Canopy Management: Enhances sunlight exposure and air flow.",
+            "Optimal Planting Months: September-November (Spring)"
+        ],
+        "planting_months": "September-November (Spring)",
+        "why": "Aligns with temperature increases, promoting vine establishment and growth.",
+        "reasons": [
+            "Water Efficiency: Drip irrigation conserves water and supports consistent vine health.",
+            "Extended Season: Greenhouses allow for earlier planting and later harvesting, increasing yield potential."
+        ]
+    },
+    {
+        "title": "Tomatoes",
+        "image": "tomatoes.jpg",
+        "methods": [
+            "Greenhouse Cultivation: Protects against pests and extreme weather, enabling year-round production.",
+            "Drip Irrigation: Provides consistent moisture, reducing disease incidence.",
+            "Optimal Planting Months: September-November (Spring)"
+        ],
+        "planting_months": "September-November (Spring)",
+        "why": "Warm temperatures support robust growth and fruit development.",
+        "reasons": [
+            "Protected Environment: Greenhouses enhance yield and quality by controlling external factors.",
+            "Disease Prevention: Drip irrigation minimizes foliage wetness, lowering disease risks."
+        ]
+    },
+    {
+        "title": "Lettuce",
+        "image": "lettuce.jpg",
+        "methods": [
+            "Shade Cloths: Protects plants from excessive heat, preventing bolting and ensuring tender leaves.",
+            "Succession Planting: Stagger planting times for continuous harvest throughout the season.",
+            "Optimal Planting Months: September-November (Spring)"
+        ],
+        "planting_months": "September-November (Spring)",
+        "why": "Cooler temperatures reduce the risk of heat stress and enhance leaf quality.",
+        "reasons": [
+            "Leaf Quality: Shade cloths prevent premature bolting, ensuring tender and marketable leaves.",
+            "Continuous Supply: Succession planting ensures a steady harvest, maximizing yield and profitability."
+        ]
+    },
+    {
+        "title": "Carrots",
+        "image": "carrots.jpg",
+        "methods": [
+            "Deep Tillage: Loosen soil to allow proper root expansion and prevent deformities.",
+            "Thinning: Remove excess seedlings to ensure adequate space for root development.",
+            "Optimal Planting Months: September-November (Spring)"
+        ],
+        "planting_months": "September-November (Spring)",
+        "why": "Cool growing conditions promote straight, healthy root growth.",
+        "reasons": [
+            "Root Quality: Deep tillage and proper spacing enhance carrot size and shape.",
+            "Yield Improvement: Thinning reduces competition, allowing remaining plants to develop optimally."
+        ]
+    },
+    {
+        "title": "Broccoli",
+        "image": "broccoli.jpg",
+        "methods": [
+            "Row Covers: Protects plants from pests and extreme temperatures.",
+            "Fertilization: Apply high-nitrogen fertilizers to support leafy growth and head development.",
+            "Optimal Planting Months: September-November (Spring)"
+        ],
+        "planting_months": "September-November (Spring)",
+        "why": "Cooler temperatures favor broccoli growth and prevent premature bolting.",
+        "reasons": [
+            "Protection: Row covers reduce pest damage and protect against temperature fluctuations.",
+            "Growth Enhancement: Adequate fertilization promotes robust head formation and higher yields."
+        ]
+    },
+    {
+        "title": "Apples",
+        "image": "apples.jpg",
+        "methods": [
+            "Pruning: Maintain tree shape, improve air circulation, and enhance sunlight penetration.",
+            "Thinning Fruits: Remove excess fruits to ensure larger, higher-quality apples.",
+            "Optimal Planting Months: September-November (Spring)"
+        ],
+        "planting_months": "September-November (Spring)",
+        "why": "Early spring planting aligns with apple tree growth cycles, promoting healthy development.",
+        "reasons": [
+            "Tree Health: Pruning prevents disease and encourages strong structural growth.",
+            "Fruit Quality: Thinning ensures larger, market-ready apples with better flavor profiles."
+        ]
+    },
+    {
+        "title": "Pears",
+        "image": "pears.jpg",
+        "methods": [
+            "Integrated Pest Management (IPM): Utilize biological controls to manage common pear pests.",
+            "Soil Management: Maintain well-drained, fertile soils to support tree health and fruit production.",
+            "Optimal Planting Months: September-November (Spring)"
+        ],
+        "planting_months": "September-November (Spring)",
+        "why": "Ensures trees establish before the onset of the growing season, enhancing resilience.",
+        "reasons": [
+            "Pest Control: IPM reduces reliance on chemical pesticides, promoting healthier orchards.",
+            "Soil Health: Well-managed soils support robust tree growth and higher fruit yields."
+        ]
+    },
+    {
+        "title": "Berries (Strawberries, Blueberries, Raspberries)",
+        "image": "berries.jpg",
+        "methods": [
+            "Mulching: Retains soil moisture, suppresses weeds, and maintains consistent soil temperatures.",
+            "Row Spacing: Adequate spacing ensures good air circulation, reducing disease risks.",
+            "Optimal Planting Months: September-November (Spring)"
+        ],
+        "planting_months": "September-November (Spring)",
+        "why": "Cooler temperatures support root establishment and reduce transplant shock.",
+        "reasons": [
+            "Moisture Retention: Mulching conserves water, essential for berry plant health.",
+            "Disease Prevention: Proper spacing and mulching minimize fungal diseases and pest infestations."
+        ]
+    },
+    {
+        "title": "Dairy Pasture (Clover and Ryegrass)",
+        "image": "dairy_pasture.jpg",
+        "methods": [
+            "Rotational Grazing: Move livestock between pastures to prevent overgrazing and promote regrowth.",
+            "Soil Conservation: Implement cover cropping and mulching to maintain soil health.",
+            "Optimal Planting Months: March-April (Autumn)"
+        ],
+        "planting_months": "March-April (Autumn)",
+        "why": "Establishes robust pasture before winter, ensuring ample forage availability.",
+        "reasons": [
+            "Sustainable Grazing: Rotational systems maintain pasture productivity and soil integrity.",
+            "Soil Health: Cover crops prevent erosion and enhance nutrient cycling."
+        ]
+    },
+    {
+        "title": "Sustainable Grazing (Farming Practice)",
+        "image": "sustainable_grazing.jpg",
+        "methods": [
+            "Rotational Grazing: Systematically graze different pasture sections to allow recovery.",
+            "Pasture Management: Regularly monitor and adjust stocking rates based on pasture condition.",
+            "Optimal Implementation: Year-Round"
+        ],
+        "planting_months": "Year-Round",
+        "why": "Ensures continuous pasture health and prevents land degradation.",
+        "reasons": [
+            "Pasture Longevity: Rotational grazing maintains forage quality and availability.",
+            "Soil Integrity: Reduces soil compaction and promotes nutrient distribution through manure."
+        ]
+    },
+    {
+        "title": "Horticulture Best Practices (Farming Practice)",
+        "image": "horticulture_best_practices.jpg",
+        "methods": [
+            "Greenhouse Cultivation: Extends growing seasons and protects crops from adverse weather.",
+            "Integrated Pest Management (IPM): Combines biological, cultural, and chemical methods for sustainable pest control.",
+            "Optimal Implementation: Throughout Growing Seasons"
+        ],
+        "planting_months": "Throughout Growing Seasons",
+        "why": "Enhances crop protection and maximizes production efficiency.",
+        "reasons": [
+            "Increased Yields: Controlled environments and effective pest management lead to higher productivity.",
+            "Resource Efficiency: Optimizes the use of water, fertilizers, and other inputs through precise management."
+        ]
+    }
+]

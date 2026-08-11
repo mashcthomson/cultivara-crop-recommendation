@@ -1,136 +1,100 @@
-# Cultivara 🌾 – Crop Recommendation System
+# Cultivara — Cultivating with Climate
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+A crop recommendation tool for Western Australian farmers. Pick your region, enter your
+farm details (date, soil type, and optionally temperature, rainfall, pH and N/P/K levels),
+and Cultivara recommends the most suitable crop — along with irrigation, farming-method
+and planting-window guidance for it.
 
-> RMIT University – Master of Data Science Capstone Project
+An RMIT WIL Group 27 project.
 
----
+## Regions covered
 
-## What this is
+Each region has its own Random Forest classifier, trained on that region's climate and
+soil data. One model per region, because the Kimberley, the Wheatbelt and the South West
+are effectively three different climates:
 
-Cultivara started as a uni project but turned into something I genuinely cared about finishing properly.
+| Region | Reference station | Example crops |
+|---|---|---|
+| Wheatbelt | Merredin | Wheat, Chickpeas, Sunflower |
+| Kimberley | Kununurra | Mango, Papaya, Sugar cane |
+| South West | Manjimup | Carrots, Broccoli, Lettuce, Pears |
 
-The idea: farmers in Western Australia have to make crop decisions based on soil composition, rainfall, temperature, and humidity — often relying on experience and gut feel. We built a system that takes those inputs and tells you what to plant, backed by Random Forest models trained on regional agricultural data.
+## How to run
 
-The key design decision was **one model per region, not one model for all of WA**. The Kimberley, the Wheatbelt, and the South West are basically three different climates that happen to share a state border, and a single combined model kept confusing crops across those zones. Splitting into three regional models made each one's job much easier — and it means a Wheatbelt farmer never gets told to plant coconuts.
-
-More importantly, we shipped a working Streamlit app that a non-technical farmer could actually open and use without needing to understand what a model is.
-
-I led a team of 6 through the whole thing — from the messy early data wrangling stages through to stakeholder testing and the final presentation. Good experience in keeping a project moving when everyone has different ideas about what done means.
-
----
-
-## What it does
-
-- Takes soil nutrient levels (N%, P%, K%), temperature, humidity, pH, and rainfall as input
-- You pick your region — **Wheatbelt**, **Kimberley**, or **South West** — and the app runs the inputs through that region's tuned Random Forest classifier
-- Returns the most suitable crop plus the top-3 options with confidence scores
-- Displays results through a clean Streamlit interface built for farmers, not data scientists
-
----
-
-## A note on the data
-
-The original regional datasets we compiled during the capstone were on the uni project drive and weren't recoverable when I rebuilt this repo. To keep the three-region architecture intact, the training data here is reconstructed from the public [Kaggle Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset) (2,200 rows, 22 crops), partitioned into three climate-analog regional subsets by matching each crop's actual temperature/rainfall envelope against the climate of the three WA regions:
-
-- **Kimberley** — tropical monsoonal north: rice, banana, coconut, papaya, mango, jute, coffee, pigeonpeas
-- **Wheatbelt** — semi-arid grain and pulse country: chickpea, lentil, mothbeans, mungbean, blackgram, kidneybeans, cotton, maize
-- **South West** — temperate mediterranean horticulture: apple, grapes, orange, pomegranate, watermelon, muskmelon, maize
-
-(Maize sits in both Wheatbelt and South West deliberately — its climate envelope genuinely spans both.) Full details and the split script are in [`data/`](data/README.md).
-
----
-
-## Model performance
-
-Measured on a held-out, stratified 20% test set per region (fixed random seed, full training logs reproducible via the train scripts):
-
-| Region | Test accuracy | Precision (macro) | Recall (macro) | F1 (macro) |
-|--------|--------------|-------------------|----------------|------------|
-| Wheatbelt | 99.4% | 0.994 | 0.994 | 0.994 |
-| Kimberley | 98.1% | 0.982 | 0.981 | 0.981 |
-| South West | 100% | 1.000 | 1.000 | 1.000 |
-
-Each training script also produces a full per-crop classification report and a confusion matrix PNG (in `crop_recommender_app/Ver 4 - Streamlit/models/`). Worth being upfront: the Kaggle dataset is cleaner and more separable than real paddock data, so these numbers are a ceiling, not a promise. The only confusions the models make are the sensible ones (rice vs jute in the Kimberley — similar heat and rainfall; lentil vs mothbeans in the Wheatbelt).
-
----
-
-## Tech stack
-
-| Component | Technology |
-|-----------|------------|
-| Language | Python 3.9+ |
-| ML Model | Random Forest (Scikit-learn), tuned with GridSearchCV |
-| Web App | Streamlit |
-| Data Processing | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Model Serialization | Joblib |
-
----
-
-## Project structure
-
-```
-cultivara-crop-recommendation/
-├── crop_recommender_app/
-│   ├── Ver 3 - Streamlit/            # Earlier iteration: one combined model
-│   │   ├── train_model.py
-│   │   ├── app.py
-│   │   └── model/crop_model.joblib
-│   └── Ver 4 - Streamlit/            # Final version: three regional models
-│       ├── train_model_wheatbelt.py
-│       ├── train_model_kimberley.py
-│       ├── train_model_southwest.py
-│       ├── training_utils.py         # Shared training/eval pipeline
-│       ├── app.py                    # Streamlit app with region selector
-│       └── models/                   # Trained models + confusion matrices
-├── data/
-│   ├── crop_data.csv                 # Master dataset (Kaggle)
-│   ├── make_regional_datasets.py     # Builds the 3 regional CSVs
-│   ├── wheatbelt.csv
-│   ├── kimberley.csv
-│   ├── southwest.csv
-│   └── README.md                     # Data provenance + region assignments
-├── requirements.txt
-└── README.md
-```
-
-Ver 3 is kept in the repo because the jump from one combined model to three regional ones was the most important decision in the project, and I like being able to point at the before and after.
-
----
-
-## Running it locally
+Requires Python 3.11+ (developed and tested on 3.14).
 
 ```bash
-git clone https://github.com/mashcthomson/cultivara-crop-recommendation.git
-cd cultivara-crop-recommendation
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-cd "crop_recommender_app/Ver 4 - Streamlit"
 streamlit run app.py
 ```
 
-Trained models are included, so the app works straight after cloning. To retrain from scratch:
+Then open http://localhost:8501.
+
+## How to retrain the models
+
+The training scripts live in `training/` and read from `data/`, writing the model and
+soil label encoder for their region into `models/`:
 
 ```bash
-cd data && python make_regional_datasets.py && cd "../crop_recommender_app/Ver 4 - Streamlit"
-python train_model_wheatbelt.py
-python train_model_kimberley.py
-python train_model_southwest.py
+python training/train_model_wheatbelt.py
+python training/train_model_kimberley.py
+python training/train_model_southwest.py
 ```
 
----
+Each script merges the region's crop parameters (`data/Crop_Parameters_<Region>.csv`)
+with soil parameters (`data/Soil_Parameters.csv`) and monthly climate aggregates built
+from the daily temperature/rainfall series, then fits a `RandomForestClassifier` on
+7 features: optimal temperature, total monthly rainfall, soil pH, N%, P%, K%, and an
+encoded soil type.
 
-## What I took away from this
+The crop/soil parameter tables are small, roughly one row per crop per region, so
+these models train on the full table with no held-out test split. A split would not
+measure generalisation at this size, it would just remove whichever crop landed in
+the test fold from the trained model's class list entirely. They are effectively
+lookup-style classifiers over the regional crop envelopes, not a claim of generalised
+prediction, and no accuracy number is reported because none would be meaningful here.
 
-Leading a team of six through a full ML project taught me things that no amount of solo coding does. Keeping everyone aligned when you're dealing with data cleaning disagreements, model tuning debates, and a hard deadline is genuinely hard.
+Known gap: a few named crops in each region's `Crop_Parameters_<Region>.csv` are
+assigned a soil type that does not appear in that region's rows of
+`Soil_Parameters.csv` (for example Wheatbelt's Barley and Lentils are both listed
+against "Loam", which is not one of Merredin's three soil types in
+`Soil_Parameters.csv`). Those crops are excluded from training and can never be
+recommended, even though they still appear as cards on the main page. The training
+scripts now print a warning naming the affected crops per region; fixing it requires
+someone who knows the correct soil type for each crop to correct the source CSV, so
+it has not been guessed or silently changed here.
 
-Technically: end-to-end pipeline work, hyperparameter tuning, deploying an ML app that non-technical people can actually use. And the big modelling lesson — sometimes the best accuracy gain isn't a fancier model, it's splitting the problem along a boundary the domain already gives you.
+## Data sources
 
-Practically: how to run a project when you're also the one doing the work.
+- Daily climate series (temperature, rainfall, solar exposure, wind, humidity/pressure)
+  derived from Bureau of Meteorology (BOM) station observations for Merredin (Wheatbelt),
+  Kununurra (Kimberley) and Manjimup (South West), plus synthetic extensions built from
+  those observations (`data/DAta.zip` holds the original packaged set; raw BOM extracts
+  are under `data/Kununurra/` and `data/Merredin/`).
+- Crop, soil and irrigation parameter tables (`data/Crop_Parameters_*.csv`,
+  `data/Soil_Parameters.csv`, `data/Irrigation_Parameters.csv`) compiled by the project
+  team for the three regions.
+- Crop cards and per-crop guidance shown in the app: `data/<region>_cards.json` and
+  `data/<region>_crop_info.json`.
 
----
+## Repository layout
 
-*RMIT University – Master of Data Science, 2024*
+```
+app.py           Streamlit app (canonical "Ver 4" build)
+data_loader.py   JSON/message loading helpers
+data/            Climate CSVs, parameter tables, crop cards/info JSON
+models/          Trained models + soil label encoders (joblib .pkl)
+training/        Per-region training scripts
+static/          CSS, crop images, rotating UI messages
+images/          Region banner and crop images
+tests/           Smoke tests (pytest tests/test_smoke.py)
+legacy/          Superseded earlier versions (Ver 3, a Kaggle-based rebuild,
+                 Flask-era templates, and the original sklearn-1.5.2 model pickles)
+media/           Presentation media (gitignored, not part of the app)
+```
+
+## Credits
+
+RMIT WIL Group 27 project.

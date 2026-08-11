@@ -1,0 +1,51 @@
+{
+    "Mango": {
+      "why": "Mangoes thrive in the Kimberley's hot, dry climate with wet summers.",
+      "irrigation_system": "Micro-sprinkler or drip irrigation to conserve water.",
+      "farming_methods": ["Pruning", "Flower Induction", "Pest Management"],
+      "grazing": "Limited grazing possible but generally avoided to protect trees.",
+      "suitability": "Ideal for horticulture; significant export potential.",
+      "optimal_planting_months": "December - February"
+    },
+    "Passionfruit": {
+      "why": "Passionfruit grows well in warm climates with good rainfall or irrigation.",
+      "irrigation_system": "Drip irrigation to maintain consistent soil moisture.",
+      "farming_methods": ["Trellising", "Mulching", "Soil Fertility Management"],
+      "grazing": "Not suitable for grazing due to vine structure.",
+      "suitability": "Horticultural crop with high market demand.",
+      "optimal_planting_months": "September - November"
+    },
+    "Sugar Cane": {
+      "why": "Sugar cane benefits from the Kimberley's tropical climate and ample water supply.",
+      "irrigation_system": "Furrow or drip irrigation to meet high water needs.",
+      "farming_methods": ["Ratooning", "Fertilizer Management", "Weed Control"],
+      "grazing": "Not suitable for grazing.",
+      "suitability": "Agricultural crop; not suitable for viticulture or horticulture.",
+      "optimal_planting_months": "August - October"
+    },
+    "Banana": {
+      "why": "Bananas are well-suited to the region's warm, humid conditions.",
+      "irrigation_system": "Overhead or drip irrigation to ensure adequate moisture.",
+      "farming_methods": ["Mulching", "Intercropping", "Disease Management"],
+      "grazing": "Not suitable due to risk of plant damage.",
+      "suitability": "Horticultural crop with continuous harvesting.",
+      "optimal_planting_months": "Year-round, optimal in wet season"
+    },
+    "Papaya": {
+      "why": "Papayas grow rapidly in warm climates and are suited to the Kimberley region.",
+      "irrigation_system": "Drip irrigation to prevent waterlogging.",
+      "farming_methods": ["Soil Testing", "Pest Management", "Pollination Enhancement"],
+      "grazing": "Not suitable for grazing.",
+      "suitability": "Horticultural crop with high nutritional value.",
+      "optimal_planting_months": "September - November"
+    },
+    "Pineapple": {
+      "why": "Pineapples thrive in warm temperatures and well-drained soils.",
+      "irrigation_system": "Drip irrigation to conserve water and prevent diseases.",
+      "farming_methods": ["Mulching", "Weed Control", "Fertilization"],
+      "grazing": "Not suitable due to spiky foliage.",
+      "suitability": "Horticultural crop with good market demand.",
+      "optimal_planting_months": "August - October"
+    }
+  }
+  

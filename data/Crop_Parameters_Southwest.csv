@@ -1,0 +1,9 @@
+Region,Crop,Soil Type,Optimal Temperature (°C),Planting Month,Harvesting Month,Yield (ton/ha)
+Southwest,Grapes,Loamy Clay,18,August,March,10.5
+Southwest,Tomatoes,Sandy Clay,24,September,January,3.8
+Southwest,Lettuce,Clay Loam,16,April,June,2.2
+Southwest,Carrots,Loamy Clay,18,March,August,4.0
+Southwest,Broccoli,Clay Loam,15,April,September,3.0
+Southwest,Apples,Loam,17,July,February,7.2
+Southwest,Pears,Clay Loam,16,July,January,6.5
+Southwest,Berries,Loam,19,May,November,4.5

@@ -1,0 +1,108 @@
+[
+    {
+        "title": "Wheat",
+        "image": "wheat.jpg",
+        "methods": [
+            "Crop Rotation: Alternate with legumes (e.g., lentils) to enhance soil nitrogen.",
+            "Conservation Tillage: Reduce soil disturbance to preserve moisture and structure.",
+            "Precision Farming: Utilize GPS-guided equipment for accurate seeding and fertilization.",
+            "Optimal Planting Months: March-April (Autumn)"
+        ],
+        "planting_months": "March-April (Autumn)",
+        "why": "Establishes crops before winter rains, ensuring strong root development and resilience.",
+        "reasons": [
+            "Soil Health: Rotation and conservation tillage maintain soil fertility and reduce erosion.",
+            "Yield Maximization: Precision farming optimizes input use, leading to higher yields and lower costs."
+        ]
+    },
+    {
+        "title": "Barley",
+        "image": "barley.jpg",
+        "methods": [
+            "Integrated Pest Management (IPM): Monitor and control pests using biological and chemical methods.",
+            "Soil Testing: Regularly assess soil nutrients to tailor fertilizer applications.",
+            "Optimal Planting Months: March-April (Autumn)"
+        ],
+        "planting_months": "March-April (Autumn)",
+        "why": "Similar to wheat, autumn planting leverages winter moisture for optimal growth.",
+        "reasons": [
+            "Pest Control: IPM reduces dependency on pesticides, promoting sustainable farming.",
+            "Nutrient Management: Soil testing ensures crops receive necessary nutrients, enhancing growth."
+        ]
+    },
+    {
+        "title": "Canola",
+        "image": "canola.jpg",
+        "methods": [
+            "Precision Seeding: Ensure uniform crop establishment and optimal plant spacing.",
+            "Fertility Management: Apply balanced fertilizers based on soil test results.",
+            "Optimal Planting Months: September-October (Spring)"
+        ],
+        "planting_months": "September-October (Spring)",
+        "why": "Cooler growing conditions favor canola development and reduce heat stress.",
+        "reasons": [
+            "Uniform Growth: Precision seeding improves canopy coverage and reduces weed competition.",
+            "Resource Efficiency: Tailored fertilization enhances crop quality and reduces waste."
+        ]
+    },
+    {
+        "title": "Lentils",
+        "image": "lentils.jpg",
+        "methods": [
+            "Sowing Techniques: Use shallow planting to optimize moisture usage.",
+            "Disease Management: Select disease-resistant varieties and practice crop rotation.",
+            "Optimal Planting Months: March-April (Autumn)"
+        ],
+        "planting_months": "March-April (Autumn)",
+        "why": "Autumn planting aligns with the Wheatbelt’s wet winter, providing necessary moisture.",
+        "reasons": [
+            "Soil Enrichment: Fixes atmospheric nitrogen, improving soil fertility for subsequent crops.",
+            "Pest and Disease Reduction: Crop rotation and resistant varieties minimize losses."
+        ]
+    },
+    {
+        "title": "Sunflower",
+        "image": "sunflower.jpg",
+        "methods": [
+            "Row Spacing: Optimize spacing for maximum sunlight exposure and air circulation.",
+            "Fertilization: Apply phosphorus and potassium-rich fertilizers to support growth.",
+            "Optimal Planting Months: September-October (Spring)"
+        ],
+        "planting_months": "September-October (Spring)",
+        "why": "Ensures growth during warmer months, enhancing oil content and seed yield.",
+        "reasons": [
+            "Maximized Oil Production: Optimal spacing and fertilization increase oil yield.",
+            "Disease Prevention: Proper spacing reduces fungal diseases and pest infestations."
+        ]
+    },
+    {
+        "title": "Chickpeas",
+        "image": "chickpeas.jpg",
+        "methods": [
+            "Dry Farming Techniques: Utilize minimal irrigation, relying on natural rainfall.",
+            "Seed Treatment: Treat seeds with fungicides to prevent soil-borne diseases.",
+            "Optimal Planting Months: March-April (Autumn)"
+        ],
+        "planting_months": "March-April (Autumn)",
+        "why": "Takes advantage of the Wheatbelt’s winter rains for germination and growth.",
+        "reasons": [
+            "Water Efficiency: Dry farming conserves water and reduces dependency on irrigation.",
+            "Disease Resistance: Seed treatments and crop rotation enhance resilience against diseases."
+        ]
+    },
+    {
+        "title": "Crop Rotation (Farming Practice)",
+        "image": "crop_rotation.jpg",
+        "methods": [
+            "Diverse Crop Selection: Rotate grains with legumes and oilseeds to break pest cycles and improve soil.",
+            "Planning: Develop a multi-year rotation plan to maximize benefits.",
+            "Optimal Implementation: Year-Round Planning"
+        ],
+        "planting_months": "Year-Round Planning",
+        "why": "Strategic rotation throughout cropping seasons maintains continuous soil health.",
+        "reasons": [
+            "Soil Fertility: Enhances nutrient availability and reduces the need for synthetic fertilizers.",
+            "Pest Management: Disrupts pest and disease life cycles, lowering infestation risks."
+        ]
+    }
+]
